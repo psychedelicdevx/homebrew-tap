@@ -5,21 +5,21 @@
 class Bosun < Formula
   desc "A fast, clean terminal UI for managing Docker containers"
   homepage "https://github.com/psychedelicdevx/bosun"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.4.1/bosun_0.4.1_darwin_amd64.tar.gz"
-      sha256 "35c075a6c5c2a0b1207d3addfca05d2438bfce23d3037388dca5ae3966df8e71"
+      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.5.0/bosun_0.5.0_darwin_amd64.tar.gz"
+      sha256 "9ffc0006b0b6afd19b2d51778156d48a8abb7e597e31816d067ecb35e0aca6a1"
 
       define_method(:install) do
         bin.install "bosun"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.4.1/bosun_0.4.1_darwin_arm64.tar.gz"
-      sha256 "9fb627f6928bff2a2fe693165bb81828bc79f6d33b5bffa7bf9ab1c2462e71ba"
+      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.5.0/bosun_0.5.0_darwin_arm64.tar.gz"
+      sha256 "53e330d9849906d4732c87a39c2bd0069f6b17069c4601879384b73cdd3c7256"
 
       define_method(:install) do
         bin.install "bosun"
@@ -29,15 +29,15 @@ class Bosun < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.4.1/bosun_0.4.1_linux_amd64.tar.gz"
-      sha256 "6170d10658d3b957326e31ccc826612b16a37a83ea24b09eef1b71e211c0cafb"
+      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.5.0/bosun_0.5.0_linux_amd64.tar.gz"
+      sha256 "58ac17d95be7bad872f25e0478282d63da056c91e269293d748712dc87e0fbf4"
       define_method(:install) do
         bin.install "bosun"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.4.1/bosun_0.4.1_linux_arm64.tar.gz"
-      sha256 "3a111358bf8d1a95120a2ac9b9b19258ab1d7355c3d49079d81a387b370af6d4"
+      url "https://github.com/psychedelicdevx/bosun/releases/download/v0.5.0/bosun_0.5.0_linux_arm64.tar.gz"
+      sha256 "828f2974b985016d5021ac3c9469b303aea997ca1acebf42a5441b6a3be3644b"
       define_method(:install) do
         bin.install "bosun"
       end
